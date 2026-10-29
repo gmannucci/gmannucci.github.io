@@ -1,0 +1,90 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --accent: #1a5f9e;
+  --line: #e3e3e3;
+  --bg: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+header {
+  text-align: center;
+  padding: 48px 20px 28px;
+  border-bottom: 1px solid var(--line);
+}
+.title { font-size: 2.2rem; font-weight: 600; letter-spacing: 0.5px; }
+.subtitle { color: var(--muted); margin-top: 4px; }
+
+.layout {
+  display: flex;
+  gap: 48px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+aside { flex: 0 0 220px; text-align: center; }
+.mainpic {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  background: var(--line);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.contact { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; text-align: left; }
+.contact i { width: 20px; text-align: center; }
+
+main { flex: 1; min-width: 0; }
+section { margin-bottom: 36px; }
+h2 {
+  font-size: 1.25rem;
+  margin: 0 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 1rem; margin: 12px 0 4px; }
+p { margin: 0 0 12px; }
+ul { margin: 0; padding-left: 20px; }
+
+.paper { margin-bottom: 18px; }
+.paper-title { font-weight: 600; }
+.paper-meta { color: var(--muted); font-size: 0.95rem; }
+.paper-links { margin-top: 2px; font-size: 0.9rem; }
+.paper-links a { margin-right: 14px; }
+.abstract {
+  display: none;
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: #f7f7f7;
+  border-left: 3px solid var(--accent);
+  font-size: 0.92rem;
+}
+.abstract.open { display: block; }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .layout { flex-direction: column; gap: 24px; }
+  aside { flex: none; max-width: 220px; margin: 0 auto; }
+  .contact { text-align: center; }
+}
