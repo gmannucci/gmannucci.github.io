@@ -56,24 +56,12 @@ h2 {
   padding-bottom: 6px;
   border-bottom: 1px solid var(--line);
 }
-h3 { font-size: 1rem; margin: 12px 0 4px; }
 p { margin: 0 0 12px; }
 ul { margin: 0; padding-left: 20px; }
+li { margin-bottom: 4px; }
 
-.paper { margin-bottom: 18px; }
-.paper-title { font-weight: 600; }
-.paper-meta { color: var(--muted); font-size: 0.95rem; }
-.paper-links { margin-top: 2px; font-size: 0.9rem; }
-.paper-links a { margin-right: 14px; }
-.abstract {
-  display: none;
-  margin-top: 8px;
-  padding: 10px 14px;
-  background: #f7f7f7;
-  border-left: 3px solid var(--accent);
-  font-size: 0.92rem;
-}
-.abstract.open { display: block; }
+.item { margin-bottom: 12px; }
+.muted { color: var(--muted); font-size: 0.95rem; }
 
 footer {
   text-align: center;
