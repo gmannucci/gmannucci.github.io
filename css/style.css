@@ -72,6 +72,7 @@ li { margin-bottom: 0.3rem; }
 .item { margin-bottom: 0.8rem; }
 .muted { color: var(--muted); font-size: 0.9em; }
 .email-line i { margin-right: 0.4em; }
+.email-line a { color: #1a5f9e; }
 
 footer {
   text-align: center;
