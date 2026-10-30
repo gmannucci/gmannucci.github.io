@@ -7,8 +7,8 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 14px; }
-@media (min-width: 48em) { html { font-size: 15px; } }
+html { font-size: 16px; }
+@media (min-width: 48em) { html { font-size: 17px; } }
 
 body {
   margin: 0;
@@ -30,13 +30,13 @@ a:hover { border-bottom-color: #000; }
 .layout {
   display: flex;
   gap: 3rem;
-  max-width: 1000px;
+  max-width: 66rem;
   margin: 0 auto;
   padding: 3rem 1.25rem;
 }
 
 /* sidebar */
-aside { flex: 0 0 200px; position: sticky; top: 2rem; align-self: flex-start; }
+aside { flex: 0 0 13rem; position: sticky; top: 2rem; align-self: flex-start; }
 .mainpic {
   width: 100%;
   display: block;
